@@ -1,0 +1,32 @@
+.how-section {
+  @media (max-width: 576px) {
+    padding: 0;
+  }
+}
+
+.how-section__content {
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 1150px) {
+    align-items: flex-start !important;
+  }
+}
+
+.how__title {
+  color: #5B5B5B;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 39px;
+  margin: 30px auto;
+
+  &.dark {
+    color: #fff;
+  }
+
+  @media (max-width: 1150px) {
+    display: none;
+  }
+}
+
+

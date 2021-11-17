@@ -1,0 +1,40 @@
+.tab {
+  text-align: center;
+  flex: 1 1;
+  padding: 28px 0;
+  text-decoration: none;
+  transition: background-color .2s ease-out, text-decoration .2s ease-out;
+  color: #5B5B5B;
+  cursor: pointer;
+
+  .tab__text {
+    align-self: center;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background-color: #F7F7F7;
+  }
+
+  @media (max-width: 992px) {
+    flex: 0;
+    padding: 8px 12px;
+    text-align: left;
+  }
+
+  &.selected {
+    background-color: #F7F7F7;
+    text-decoration: underline;
+  }
+}
+
+.tab_dark {
+  color: #fff;
+  &:hover {
+    background-color: #0E0E1E;
+  }
+
+  &.selected {
+    background-color: #0E0E1E;
+  }
+}

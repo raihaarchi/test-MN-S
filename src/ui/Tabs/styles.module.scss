@@ -1,0 +1,14 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #81E7FC;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.tabs_dark {
+  border-bottom: 1px solid #1B1B31;
+}
+

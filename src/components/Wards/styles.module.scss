@@ -1,0 +1,51 @@
+@import '../../styles/main.scss';
+
+.rewards {
+  display: flex;
+  margin-top: 35px;
+
+  .reward__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    border-radius: 12px;
+
+    &:first-of-type {
+      margin-right: 20px;
+    }
+
+    &_light {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &_dark {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  @media (max-width: $breakpointSM),
+  (max-width: $breakpointLG) and (orientation: landscape) {
+    margin-top: 29px;
+
+    .reward__wrapper {
+      width: 68px;
+      height: 68px;
+
+      &:first-of-type>svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:last-child>svg {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+}
+
+.iconFontFamily {
+  font-family: $podkova;
+}

@@ -1,0 +1,9 @@
+@import '../../styles/main.scss';
+
+.scroll {
+  margin: 0 auto;
+  @media (max-width: $breakpointSM) {
+    display: none;
+  }
+
+}

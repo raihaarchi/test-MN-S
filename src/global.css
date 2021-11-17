@@ -1,0 +1,31 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url('./static/fonts/Roboto-Regular.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: RobotoRegular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.styles_slider-pagination__-7dQS2bullets{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,24 @@
+@import '../../styles/main.scss';
+
+.telegramim_button {
+  text-decoration: none;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  border-radius: 50px;
+  i {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #27A5E7;
+    box-shadow: 1px 1px 5px #27A5E7;
+    color: #FFFFFF;
+    border-radius: 50px;
+  }
+  @media (max-width: $breakpointSM) {
+    bottom: 60px;
+  }
+}

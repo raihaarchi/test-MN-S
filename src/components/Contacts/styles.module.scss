@@ -1,0 +1,10 @@
+.section_contacts {
+  padding: 0 !important;
+
+  .section-content_contacts {
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+}
+

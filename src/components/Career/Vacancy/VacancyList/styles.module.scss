@@ -1,0 +1,52 @@
+.vacancy-list {
+  &__text {
+    margin-top: 6px;
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+    @media (max-width: 540px) {
+      margin-top: 12px;
+    }
+  }
+  
+  &__text-intern {
+    margin-top: 13px;
+    margin-left: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+  &__list-intern {
+    max-height: 150px;
+    list-style-position: inside;
+    column-count: 2;
+    column-count: 2;
+    column-count: 2;
+  }
+  &__list {
+    margin-top: 30px;
+    max-width: 500px;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      margin-top: 25px;
+      max-width: fit-content;
+    }
+  }
+  &__title {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 19px;
+
+    @media (max-width: 1024px) {
+      margin-top: 24px;
+    }
+  }
+}

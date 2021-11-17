@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+.container {
+  display: flex;
+
+  &_hidden {
+    overflow: hidden;
+    max-height: 100vh;
+  }
+
+  @media (max-width: $breakpointSM),
+  (max-width: $breakpointLG) and (orientation: landscape) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+}

@@ -1,0 +1,128 @@
+@import '../../styles/main.scss';
+
+.line {
+  &__title,
+  &__frameworks,
+  &__technologies {
+    &:after {
+      font-family: $fontFamily;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ececec;
+      position: absolute;
+      display: inline-block;
+      background-color: white;
+      padding: 0px 10px;
+      top: 50%;
+    }
+  }
+
+  &__title {
+    font-family: $fontFamilySecondary;
+    font-size: 25px;
+    line-height: 29px;
+    border-right: 1px solid #ececec;
+    color: #5b5b5b;
+    width: 4.65%; //width: 56px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      border-right: none;
+      border-bottom: 1px solid #ececec;
+      padding: 20px 0 28px;
+      width: 100%;
+    }
+
+    @media (max-width: 540px) {
+      height: 75px;
+    }
+
+    &-text {
+      height: fit-content;
+      transform: rotate(-90deg);
+      margin-right: 60%;
+
+      @media (max-width: 1024px) {
+        transform: rotate(0deg);
+        margin-right: 0;
+      }
+    }
+
+    &:after {
+      content: 'ТЕХНОЛОГИИ';
+      right: -56px;
+      transform: rotate(-90deg);
+
+      @media (max-width: 1024px) {
+        top: 100%;
+        right: 50%;
+        transform: rotate(0deg) translate(50%, -50%);
+      }
+
+      @media (max-width: 540px) {
+        font-size: 12px;
+      }
+    }
+  }
+  
+
+  &-text {
+    // text-align: center;
+    width: fit-content;
+  }
+
+  &-text--position {
+    padding-left: 22px;
+  }
+
+  &-dark {
+
+    color: rgba(255, 255, 255, 0.5);
+
+    .line__title {
+      color: white;
+      border-color: #1b1b31;
+    }
+
+    .line__frameworks,
+    .line__technologies {
+      &-item {
+        &>svg>path {
+          fill: #81818d;
+          opacity: 1;
+        }
+      }
+    }
+
+    .line__title,
+    .line__frameworks,
+    .line__technologies {
+      border-color: #1b1b31;
+
+      &::after {
+        background-color: #03031c;
+        color: #1b1b31;
+      }
+    }
+  }
+}
+
+.frameworks-icons {
+  @media (max-width: $breakpointMD) {
+    width: 45px;
+    height: 40px;
+  }
+}
+
+.technologies-icons {
+
+  @media (max-width: $breakpointSM),
+  (max-width: $breakpointLG) and (orientation: landscape) {
+    width: 42px;
+    height: 25px;
+  }
+}

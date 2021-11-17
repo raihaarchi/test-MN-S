@@ -1,0 +1,37 @@
+@import '../../styles/main.scss';
+
+.sidebar {
+  &_light{
+    background-color: #F4F4F4;
+  }
+  &_dark{
+    background-color: #1b1b32;
+  }
+  width: $sidebarWidth;
+  box-sizing: border-box;
+  background-color: $sidebarColor;
+  height: 100%;
+  z-index: 2147483645;
+
+  &__logo {
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: $breakpointSM), (max-width: $breakpointLG) and (orientation: landscape) {
+    position: fixed;
+    max-height: 100vh;
+    overflow: auto;
+    right: 0;
+    min-width: 80vw;
+    display: none;
+    &_visible {
+      display: block;
+    }
+    &__logo {
+      align-items: flex-start;
+      padding-top: 24px;
+    }
+  }
+}

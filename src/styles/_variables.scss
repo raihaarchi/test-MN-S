@@ -1,0 +1,31 @@
+@import './fonts';
+
+$fontFamily: 'RobotoRegular', sans-serif;
+$fontFamilySecondary: 'RobotoBold', sans-serif;
+$helveticaFontFamily: 'Helvetica', sans-serif;
+$helveticaBoldFontFamily: 'HelveticaBold', sans-serif;
+$podkova: 'PodkovaVariable', sans-serif;
+
+$sidebarColor: #F4F4F4;
+$sectionColor: #E5E5E5;
+$sidebarFontColor: #BDBDBD;
+$titleFontColor: #5B5B5B;
+$subtitleFontColor: #D1D1D1;
+$headerIconColor: #4d4d4d;
+$headerBorderColor: #ECECEC;
+$headerBurgerColor: #000000;
+
+$sidebarFontSize: 12px;
+$titleFontSize: 36px;
+$subtitleFontSize: 14px;
+$headerIconFontSize: 20px;
+$contactPageSubtitleFontSize: 25px;
+
+$headerHeight: 100px;
+$headerMobileHeight: 60px;
+$sidebarWidth: 100px;
+
+$breakpointSM: 576px;
+$breakpointMD: 768px;
+$breakpointLG: 992px;
+$breakpointXL: 1200px;

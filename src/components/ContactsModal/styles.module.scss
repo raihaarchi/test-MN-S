@@ -1,0 +1,46 @@
+@import '../../styles/main.scss';
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 386px;
+  height: 149px;
+  border-radius: 15px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background:#0E0E0E60;
+  backdrop-filter: blur(10px);
+  &-block {
+    display: flex;
+  }
+  &__cross{
+    align-self: flex-end;
+    margin: 9px 9px 10px 0;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  &__text{
+    font-family: $fontFamily;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  @media (max-width: $breakpointSM), (max-width: $breakpointLG) and (orientation: landscape) {
+    width: 245px;
+    height: 127px;
+    &__icon{
+      width: 45px;
+      height: 45px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

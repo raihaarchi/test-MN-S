@@ -1,0 +1,14 @@
+.open-case-section {
+  padding-left: 0;
+  @media (max-width: 576px) {
+    padding: 0;
+  }
+}
+
+.open-case-section__content {
+  height: 100%;
+
+  @media (max-width: 576px) {
+    height: unset;
+  }
+}

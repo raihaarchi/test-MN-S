@@ -1,0 +1,65 @@
+@import '../../styles/main.scss';
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__rewards {
+    padding: 10px 0 0 40px;
+    display: flex;
+  }
+  &__title {
+    padding-top: 10px;
+    max-width: 557px;
+    color: #5B5B5B;
+    font-size: 33px;
+    text-align: left;
+    font-family: $helveticaBoldFontFamily;
+    @media (max-width: $breakpointXL) {
+      padding-top: 0;
+      text-align: center;
+    }
+
+  }
+  &__line {
+    width: 130px;
+    border: none;
+    height: 1px;
+    background: #D1D1D1;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    @media (max-width: $breakpointXL) {
+      margin: 22px auto 8px;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #D1D1D1;
+  }
+
+  @media (max-width: $breakpointLG) {
+    padding: 0;
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__rewards {
+      display: none;
+    }
+  }
+  @media (max-width: $breakpointSM), (max-width: $breakpointLG) and (orientation: landscape) {
+    padding: 0;
+    &__title {
+      font-size: 24px;
+    }
+    &__line {
+      margin: 15px auto 8px;
+    }
+    &__subtitle {
+      //margin: -10px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import '../../styles/main.scss';
+
+.logotip {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-icon {
+    opacity: .4;
+    transition: opacity .3s ease-out;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  
+  @media (max-width: $breakpointSM), (max-width: $breakpointLG) and (orientation: landscape) {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+}
+
+.nav__link {
+  width: 100%;
+  &-light{
+    &:hover {
+      p {
+        color: #626262;
+      }
+    }
+  }
+  &-dark {
+    &:hover {
+      p {
+        color: #BABAC1;
+      }
+    }
+  }
+  &:hover {
+    .icon {
+      opacity: 0.6;
+      transition: all, .2s ease-in-out;
+    }
+    p {
+      transition: all, .2s ease-in-out;
+    }
+  }
+  &:first-of-type {
+    a {
+      height: 90px;
+    }
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: $sidebarFontSize;
+    line-height: 14px;
+    color: #929292;
+    text-decoration: none;
+    height: 67px;
+    .icon {
+      opacity: 0.4;
+    }
+    p{
+      margin: 3px 0 0 0;
+    }
+    &.active-light {
+      background-color: #FAFAFA;
+      .icon {
+        opacity: 0.6;
+      }
+      p {
+        color: #626262;
+      }
+    }
+    &.active-dark {
+      background-color: #0E0E1E;
+      .icon {
+        opacity: 0.6;
+      }
+      p {
+        color: #BABAC1;
+      }
+    }
+  }
+  @media (max-width: $breakpointSM), (max-width: $breakpointLG) and (orientation: landscape) {
+    a {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 60px;
+      height: 60px;
+
+      img {
+        margin-right: 24px;
+      }
+
+      p{
+        font-size: 13px;
+      }
+
+      .icon {
+        margin-right: 24px;
+        width: 40px;
+        &:first-of-type {
+          margin-right: 0px;
+          width: 64px;
+        }
+      }
+
+    }
+  }
+}

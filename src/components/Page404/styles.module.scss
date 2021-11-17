@@ -1,0 +1,149 @@
+@import '../../styles/main.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .hr {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 9;
+    border: none;
+    border-bottom: 1px solid #F4F4F4;
+    &-dark {
+      border-bottom: 1px solid #cdcdd2;
+    }
+  }
+}
+
+.link-back {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  display: flex;
+  color: #737373;
+  text-decoration: none;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  p{
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+  &-arrow {
+    width: 29px;
+    height: 20px;
+    fill: #737373;
+  }
+  &-dark {
+    color: #727280;
+    .link-back-arrow {
+      fill: #727280;
+    }
+  }
+  @media (max-width: $breakpointSM),
+  (max-width: $breakpointLG) and (orientation: landscape) {
+    top: 13px;
+    left: 30px;
+    p{
+      font-size: 16px;
+      line-height: 19px;
+      margin-left: 8px;
+    }
+    &-arrow {
+      width: 24px;
+      height: 16px;
+    }
+  }
+}
+
+.error-page {
+  position: relative;
+  background: #ffffff;
+  color: #5B5B5B;
+  z-index: 10;
+  text-align: center;
+  width: fit-content;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    font-size: 96px;
+    line-height: 112px;
+    font-family: $fontFamilySecondary;
+    &-icon {
+      fill: #5B5B5B;
+      align-self: flex-end;
+      &-dark {
+        fill: #cdcdd2;
+      }
+    }
+    &-number-left,
+    &-number-right {
+      align-self: flex-start;
+      margin-bottom: -10px;
+    }
+    &-number-right {
+      margin-left: -15px;
+    }
+  }
+  &__title {
+    font-family: $fontFamilySecondary;
+    font-size: 52px;
+    line-height: 61px;
+  }
+  &__subtitle {
+    font-family: $fontFamily;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: $breakpointSM),
+  (max-width: $breakpointLG) and (orientation: landscape) {
+    &__logo {
+      font-size: 70px;
+      line-height: 82px;
+      &-icon {
+        width: 57px;
+        height: 57px;
+      }
+      &-number-right {
+        margin-left: -10px;
+      }
+    }
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  @media (max-width: $breakpointSM) {
+    width: 80%;
+  }
+  @media (max-width: $breakpointLG) and (orientation: landscape) {
+    width: 60%;
+  }
+
+  &-dark {
+    background-color: #03031C;
+    color: #cdcdd2;
+    &:before,
+    &:after {
+      background-color: #1B1B31;
+    }
+  }
+
+  &__content {
+    height: 100%;
+  }
+}
